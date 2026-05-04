@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+>
+  <rdf:Description rdf:nodeID="n86d377095f1141e2aabe1418b5aa7afcb3">
+    <rdf:first rdf:resource="https://w3id.org/ripe/ripe-o#Work"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#registrationId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#RegistryEvidence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Records the registry identifier associated with a ripe:RegistryEvidence instance. For example, this may be an NCT or ISRCTN number.</rdfs:comment>
+    <rdfs:label xml:lang="en">registration identifier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#ExpressionOfConcern">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Comment"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/ripe/ripe-o#IntegrityAssessmentEvidence"/>
+    <rdfs:comment xml:lang="en">A ripe:ExpressionOfConcern is a fabio:Comment and ripe:IntegrityAssessmentEvidence representing a formal journal or publisher notice that raises concerns about a work and is used as evidence in a ripe:ResearchIntegrityAssessment. For example, a publisher notice questioning the reliability of a published article is an expression of concern.</rdfs:comment>
+    <rdfs:label xml:lang="en">Expression of concern</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#rationale">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/tido#PieceOfInformation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Records a textual justification attached to a tido:PieceOfInformation, such as an extracted value or an assessment conclusion. For example, it may store a reviewer note defending a ripe:IntegrityAssessmentHypothesis.</rdfs:comment>
+    <rdfs:label xml:lang="en">rationale</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#PublicationDetails">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/BibliographicMetadata"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/ripe/ripe-o#IntegrityAssessmentEvidence"/>
+    <rdfs:comment xml:lang="en">A ripe:PublicationDetails is a fabio:BibliographicMetadata and ripe:IntegrityAssessmentEvidence representing bibliographic metadata describing a work. It may record values such as title, publication venue, publisher, identifiers, and publication date. A record containing title, journal, publisher, and publication date for an article is one such instance.</rdfs:comment>
+    <rdfs:label xml:lang="en">Publication details</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#studyEndDateExtractionRationale">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#StudyDesignEvidence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Records the textual justification for assigning a value to ripe:studyEndDate in a ripe:StudyDesignEvidence instance. For example, it may explain why a final follow-up date was treated as the study end date.</rdfs:comment>
+    <rdfs:label xml:lang="en">study end date extraction rationale</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#resultOutcome">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#IntegrityAssessmentHypothesis"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Records the lexical outcome assigned to a ripe:IntegrityAssessmentHypothesis in answer to a ripe:IntegrityAssessmentQuestion. For example, an outcome may record a check-level answer such as yes, no, or unclear, or an overall assessment such as no-concerns, some-concerns, or serious-concerns.</rdfs:comment>
+    <rdfs:label xml:lang="en">result outcome</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#StudyDesignEvidence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/ripe/ripe-o#IntegrityAssessmentEvidence"/>
+    <rdfs:comment xml:lang="en">A ripe:StudyDesignEvidence is a ripe:IntegrityAssessmentEvidence representing information about the design and timeline of a registered study or clinical trial. It may record values such as recruitment start, recruitment end, and study end dates, together with rationales supporting those assigned values. A record describing the recruitment and completion timeline of a clinical study is one such instance.</rdfs:comment>
+    <rdfs:label xml:lang="en">Study design evidence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#IntegrityAssessmentQuestion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tido#RQ"/>
+    <rdfs:comment xml:lang="en">A ripe:IntegrityAssessmentQuestion is a tido:RQ and prov:Entity representing one specific integrity-related question investigated within a ripe:ResearchIntegrityAssessment. It is answered by one or more ripe:IntegrityAssessmentHypothesis instances via tido:answers. An example of a ripe:IntegrityAssessmentQuestion is a question asking whether a ripe:Work has an associated retraction.</rdfs:comment>
+    <rdfs:label xml:lang="en">Integrity assessment question</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#Author">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Person"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:comment xml:lang="en">A ripe:Author is a prov:Person and foaf:Person representing a person associated with an assessment-relevant resource represented in a ripe:ResearchIntegrityAssessment. Such resources may include works and other pieces of information, such as peer comments. The author of a journal article or the person named as responsible for a peer comment are examples of ripe:Author.</rdfs:comment>
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#retractionWatchRecordId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#IntegrityAssessmentEvidence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Records the source identifier assigned by the Retraction Watch database to a ripe:IntegrityAssessmentEvidence item when such an identifier is available. In the RIPE-KG, this is used for retraction notices, expressions of concern, and correction notices sourced from Retraction Watch.</rdfs:comment>
+    <rdfs:label xml:lang="en">retraction watch record identifier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#Work">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Work"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment xml:lang="en">A ripe:Work is a fabio:Work and prov:Entity representing a work relevant to a ripe:ResearchIntegrityAssessment. It may be the subject of an assessment, a cited publication, or another work connected to assessment evidence, such as an article associated with a publication notice. For example, an article, a cited paper, or an article retracted by a notice may be represented as a ripe:Work.</rdfs:comment>
+    <rdfs:label xml:lang="en">Work</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#IntegrityAssessmentHypothesis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tido#Hypothesis"/>
+    <rdfs:comment xml:lang="en">A ripe:IntegrityAssessmentHypothesis is a tido:Hypothesis that records an automated or human-reviewed answer to a ripe:IntegrityAssessmentQuestion. For example, a reviewer or automated agent may produce a hypothesis that a study has no concerns, some concerns, or serious concerns.</rdfs:comment>
+    <rdfs:label xml:lang="en">Integrity assessment hypothesis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#registrationAssessmentRationale">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#RegistryEvidence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Records the textual justification for the registration-status assessment represented by a ripe:RegistryEvidence instance. For example, it may explain that the registry submission date was compared with the recruitment start date.</rdfs:comment>
+    <rdfs:label xml:lang="en">registration assessment rationale</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#isProspective">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#RegistryEvidence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">Records whether a ripe:RegistryEvidence instance supports the judgement that the study was prospectively registered. For example, a value of true indicates that registration was assessed as preceding the relevant study start point.</rdfs:comment>
+    <rdfs:label xml:lang="en">is prospective</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#studyEndDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#StudyDesignEvidence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Records the date value assigned as the study end in a ripe:StudyDesignEvidence instance. For example, it may capture a reported study completion or final follow-up date.</rdfs:comment>
+    <rdfs:label xml:lang="en">study end date</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#registrationLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#RegistryEvidence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:comment xml:lang="en">Records the URI of the registry record represented by a ripe:RegistryEvidence instance. For example, it may point to a ClinicalTrials.gov or WHO ICTRP record page.</rdfs:comment>
+    <rdfs:label xml:lang="en">registration link</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#registryName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#RegistryEvidence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Records the name of the trial registry represented by a ripe:RegistryEvidence instance. For example, values may include ClinicalTrials.gov, ISRCTN, or WHO ICTRP.</rdfs:comment>
+    <rdfs:label xml:lang="en">registry name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n86d377095f1141e2aabe1418b5aa7afcb1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n86d377095f1141e2aabe1418b5aa7afcb2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#recruitmentEndDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#StudyDesignEvidence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Records the date value assigned as the participant recruitment end in a ripe:StudyDesignEvidence instance. For example, it may capture an enrolment end date reported in the article text.</rdfs:comment>
+    <rdfs:label xml:lang="en">recruitment end date</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#EvidenceAggregation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tido#Activity"/>
+    <rdfs:comment xml:lang="en">A ripe:EvidenceAggregation is a prov:Activity representing the aggregation of evidence and source records used in a ripe:ResearchIntegrityAssessment. It provides provenance for the evidence collected for one ripe:ResearchIntegrityAssessment. Retrieval of registry records and publication notices for a research integrity assessment is one such activity.</rdfs:comment>
+    <rdfs:label xml:lang="en">Evidence aggregation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#concerns">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#IntegrityAssessmentEvidence"/>
+    <rdfs:range rdf:nodeID="n86d377095f1141e2aabe1418b5aa7afcb1"/>
+    <rdfs:comment xml:lang="en">Relates a ripe:IntegrityAssessmentEvidence instance to the ripe:Work or ripe:Author to which the evidence applies. This property is used when an evidence item bears on a work, an author associated with that work, or both. For example, publication metadata, registry evidence, and peer comments may relate to a ripe:Work via ripe:concerns, while a publication notice may also relate to one or more ripe:Author instances via ripe:concerns.</rdfs:comment>
+    <rdfs:label xml:lang="en">concerns</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#recruitmentEndDateExtractionRationale">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#StudyDesignEvidence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Records the textual justification for assigning a value to ripe:recruitmentEndDate in a ripe:StudyDesignEvidence instance. For example, the agent responsible for gathering the ripe:recruitmentEndDate may state that the end of enrolment was inferred from the methods described in the study protocol.</rdfs:comment>
+    <rdfs:label xml:lang="en">recruitment end date extraction rationale</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#RetractionNotice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/RetractionNotice"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/ripe/ripe-o#IntegrityAssessmentEvidence"/>
+    <rdfs:comment xml:lang="en">A ripe:RetractionNotice is a fabio:RetractionNotice and ripe:IntegrityAssessmentEvidence representing a formal retraction notice used as evidence in a ripe:ResearchIntegrityAssessment. For example, a journal-issued retraction notice for an article is a ripe:RetractionNotice.</rdfs:comment>
+    <rdfs:label xml:lang="en">Retraction notice</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#recruitmentStartDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#StudyDesignEvidence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Records the date value assigned as the participant recruitment start in a ripe:StudyDesignEvidence instance. For example, it may capture a month-year or date string when the first participant was enrolled for a study.</rdfs:comment>
+    <rdfs:label xml:lang="en">recruitment start date</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#AutomatedAgent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+    <rdfs:comment xml:lang="en">A ripe:AutomatedAgent is a prov:SoftwareAgent representing a software agent that participates in a ripe:ResearchIntegrityAssessment by gathering evidence, deriving assessment-relevant information, or producing initial outcomes. Software that can perform ripe:EvidenceAggregation and produce ripe:IntegrityAssessmentHypothesis instances without human intervention is modelled as a ripe:AutomatedAgent.</rdfs:comment>
+    <rdfs:label xml:lang="en">Automated agent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#assesses">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#ResearchIntegrityAssessment"/>
+    <rdfs:range rdf:resource="https://w3id.org/ripe/ripe-o#Work"/>
+    <rdfs:comment xml:lang="en">Relates a ripe:ResearchIntegrityAssessment to the ripe:Work that is the subject of the assessment. For example, one ripe:ResearchIntegrityAssessment may assess a single trial publication.</rdfs:comment>
+    <rdfs:label xml:lang="en">assesses</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#PeerComment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Comment"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/ripe/ripe-o#IntegrityAssessmentEvidence"/>
+    <rdfs:comment xml:lang="en">A ripe:PeerComment is a fabio:Comment and ripe:IntegrityAssessmentEvidence representing a post-publication comment from the research community about a work and used as evidence in a ripe:ResearchIntegrityAssessment. For example, a PubPeer comment discussing methodological concerns is a ripe:PeerComment.</rdfs:comment>
+    <rdfs:label xml:lang="en">Peer comment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#registrationDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#RegistryEvidence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Records the registration date value associated with a ripe:RegistryEvidence instance. For example, it may store the submission date shown in a ClinicalTrials.gov record.</rdfs:comment>
+    <rdfs:label xml:lang="en">registration date</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#RegistryEvidence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/ripe/ripe-o#IntegrityAssessmentEvidence"/>
+    <rdfs:comment xml:lang="en">A ripe:RegistryEvidence is a ripe:IntegrityAssessmentEvidence representing information recorded in a registry about a registered study or clinical trial. It may record values such as the registry identifier, registration date, registry name, registry link, and the associated registration assessment rationale. A ClinicalTrials.gov or WHO ICTRP entry associated with a clinical trial publication is one such instance.</rdfs:comment>
+    <rdfs:label xml:lang="en">Registry evidence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#recruitmentStartDateExtractionRationale">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ripe/ripe-o#StudyDesignEvidence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Records the textual justification for assigning a value to ripe:recruitmentStartDate in a ripe:StudyDesignEvidence instance. For example, it may note that a sentence describing when enrolment began was interpreted as the recruitment start date by the agent responsible.</rdfs:comment>
+    <rdfs:label xml:lang="en">recruitment start date extraction rationale</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#OverallIntegrityAssessmentQuestion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/ripe/ripe-o#IntegrityAssessmentQuestion"/>
+    <rdfs:comment xml:lang="en">A ripe:OverallIntegrityAssessmentQuestion is a ripe:IntegrityAssessmentQuestion representing the overall integrity question investigated for a ripe:Work within a ripe:ResearchIntegrityAssessment. It is answered by one or more ripe:IntegrityAssessmentHypothesis instances that synthesise the component integrity assessment questions and their corresponding hypotheses.</rdfs:comment>
+    <rdfs:label xml:lang="en">Overall integrity assessment question</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/ripe/ripe-o/1.0.0"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-02</dcterms:created>
+    <dcterms:description xml:lang="en">The Research Integrity Provenance and Evidence Ontology (RIPE-O) can be used to describe provenance traces of research integrity assessment processes combining evidence, hypotheses, activities, agents, and human-generated or automated assessment outputs.</dcterms:description>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-02</dcterms:issued>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-02</dcterms:modified>
+    <dcterms:title xml:lang="en">Research Integrity Provenance and Evidence Ontology</dcterms:title>
+    <vann:preferredNamespacePrefix>ripe</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ripe/ripe-o#"/>
+    <owl:versionInfo>1.0.0</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#HumanReviewer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Person"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:comment xml:lang="en">A ripe:HumanReviewer is a prov:Person and foaf:Person representing a human agent who participates in a ripe:ResearchIntegrityAssessment by evaluating evidence and recording ripe:IntegrityAssessmentHypothesis instances. A systematic reviewer investigating research integrity of a study is a ripe:HumanReviewer.</rdfs:comment>
+    <rdfs:label xml:lang="en">Human reviewer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#IntegrityAssessmentEvidence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tido#Evidence"/>
+    <rdfs:comment xml:lang="en">A ripe:IntegrityAssessmentEvidence is a tido:Evidence item used to support, challenge, or contextualise a ripe:ResearchIntegrityAssessment. Publication metadata, registry evidence, study-design evidence, publication notices, and peer comments used in an integrity assessment are examples of ripe:IntegrityAssessmentEvidence.</rdfs:comment>
+    <rdfs:label xml:lang="en">Integrity assessment evidence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#ResearchIntegrityAssessment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tido#Case"/>
+    <rdfs:comment xml:lang="en">A ripe:ResearchIntegrityAssessment represents one integrity assessment of a work. It brings together the ripe:Work that is the subject of the assessment, the ripe:IntegrityAssessmentQuestion instances investigated, the ripe:IntegrityAssessmentHypothesis instances answering those questions, the ripe:IntegrityAssessmentEvidence instances supporting them, and the activities that generated or reviewed those outcomes. An assessment of a single published clinical trial report is one such instance.</rdfs:comment>
+    <rdfs:label xml:lang="en">Research integrity assessment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ripe/ripe-o#CorrectionNotice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Correction"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/ripe/ripe-o#IntegrityAssessmentEvidence"/>
+    <rdfs:comment xml:lang="en">A ripe:CorrectionNotice is a fabio:Correction and ripe:IntegrityAssessmentEvidence representing a formal correction notice about a work and used as evidence in a ripe:ResearchIntegrityAssessment. For example, an erratum correcting a published article is a ripe:CorrectionNotice.</rdfs:comment>
+    <rdfs:label xml:lang="en">Correction notice</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n86d377095f1141e2aabe1418b5aa7afcb2">
+    <rdf:first rdf:resource="https://w3id.org/ripe/ripe-o#Author"/>
+    <rdf:rest rdf:nodeID="n86d377095f1141e2aabe1418b5aa7afcb3"/>
+  </rdf:Description>
+</rdf:RDF>

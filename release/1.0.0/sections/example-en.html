@@ -1,0 +1,65 @@
+<h2 id="example" class="list">Example Assessment Trace <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span>
+A compact RIPE-O trace can be read as a chain from assessment question to evidence and provenance. The example below describes an assessment of one work for a question about concerns relating to the timing or absence of study registration. The assessment investigates the question, uses registry and study-design evidence, and records both a human-reviewed and an automated hypothesis. The provenance statements identify the activity and agents associated with the generated outputs.
+</span>
+
+<pre class="example">
+@prefix ripe: &lt;https://w3id.org/ripe/ripe-o#&gt; .
+@prefix tido: &lt;https://w3id.org/tido#&gt; .
+@prefix prov: &lt;http://www.w3.org/ns/prov#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix : &lt;https://example.org/ripe-trace/&gt; .
+
+:assessment1
+    a ripe:ResearchIntegrityAssessment ;
+    ripe:assesses :work1 ;
+    tido:investigates :question2_2 .
+
+:work1
+    a ripe:Work .
+
+:question2_2
+    a ripe:IntegrityAssessmentQuestion ;
+    rdfs:label "Are there concerns relating to the timing or absence of study registration?"@en .
+
+:registryEvidence1
+    a ripe:RegistryEvidence ;
+    ripe:concerns :work1 ;
+    prov:wasGeneratedBy :evidenceAggregation1 .
+
+:studyDesignEvidence1
+    a ripe:StudyDesignEvidence ;
+    ripe:concerns :work1 ;
+    prov:wasGeneratedBy :evidenceAggregation1 .
+
+:evidenceAggregation1
+    a ripe:EvidenceAggregation ;
+    prov:wasAssociatedWith :automatedAgent1 .
+
+:evaluation1
+    a tido:Evaluation ;
+    tido:contributesTo :assessment1 ;
+    prov:used :registryEvidence1, :studyDesignEvidence1 ;
+    prov:wasAssociatedWith :humanReviewer1, :automatedAgent1 .
+
+:humanHypothesis1
+    a ripe:IntegrityAssessmentHypothesis ;
+    tido:answers :question2_2 ;
+    ripe:resultOutcome "yes" ;
+    prov:wasGeneratedBy :evaluation1 ;
+    prov:wasAttributedTo :humanReviewer1 .
+
+:automatedHypothesis1
+    a ripe:IntegrityAssessmentHypothesis ;
+    tido:answers :question2_2 ;
+    ripe:resultOutcome "yes" ;
+    ripe:rationale "retrospective registration" ;
+    prov:wasGeneratedBy :evaluation1 ;
+    prov:wasAttributedTo :automatedAgent1 .
+
+:humanReviewer1
+    a ripe:HumanReviewer .
+
+:automatedAgent1
+    a ripe:AutomatedAgent .
+</pre>
