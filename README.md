@@ -1,4 +1,5 @@
 # RIPE-O - Research Integrity Provenance and Evidence Ontology
+[![DOI](https://zenodo.org/badge/1212633829.svg)](https://doi.org/10.5281/zenodo.20690730)
 
 Research integrity assessments bring together evidence, reviewer judgement, and automated outputs. RIPE-O provides a vocabulary for documenting the provenance of those assessments: the work being assessed, the questions asked, the evidence considered, the hypotheses or answers produced, the activities that generated them, and the human or automated agents involved.
 
